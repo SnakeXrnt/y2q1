@@ -1,0 +1,134 @@
+Start testing: Sep 16 10:43 CEST
+----------------------------------------------------------
+1/7 Testing: list_reverse_test
+1/7 Test: list_reverse_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/2/week2-code/scripts/test_target.py" "list_reverse" "/home/nw1728/y2q1/AlgoDS/2/week2-code/list_reverse/tests/list_reverse_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/2/week2-code/build/list_reverse
+"list_reverse_test" start time: Sep 16 10:43 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Passed.
+"list_reverse_test" end time: Sep 16 10:43 CEST
+"list_reverse_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/7 Testing: list_insertions_test
+2/7 Test: list_insertions_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/2/week2-code/scripts/test_target.py" "list_insertions" "/home/nw1728/y2q1/AlgoDS/2/week2-code/list_insertions/tests/list_insertions_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/2/week2-code/build/list_insertions
+"list_insertions_test" start time: Sep 16 10:43 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [] apple 
+ got []
+ expected [apple]
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"list_insertions_test" end time: Sep 16 10:43 CEST
+"list_insertions_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/7 Testing: list_partitioning_test
+3/7 Test: list_partitioning_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/2/week2-code/scripts/test_target.py" "list_partitioning" "/home/nw1728/y2q1/AlgoDS/2/week2-code/list_partitioning/tests/list_partitioning_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/2/week2-code/build/list_partitioning
+"list_partitioning_test" start time: Sep 16 10:43 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [apple -> banana -> cherry -> date -> fig]  0 1 
+ got 
+ expected [apple -> banana -> cherry -> date -> fig]
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"list_partitioning_test" end time: Sep 16 10:43 CEST
+"list_partitioning_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/7 Testing: list_union_test
+4/7 Test: list_union_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/2/week2-code/scripts/test_target.py" "list_union" "/home/nw1728/y2q1/AlgoDS/2/week2-code/list_union/tests/list_union_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/2/week2-code/build/list_union
+"list_union_test" start time: Sep 16 10:43 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [1 -> 2 -> 3] [1 -> 2 -> 3] 
+ got 
+ expected [1 -> 2 -> 3]
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"list_union_test" end time: Sep 16 10:43 CEST
+"list_union_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/7 Testing: unsafe_buffer_test
+5/7 Test: unsafe_buffer_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/2/week2-code/scripts/test_target.py" "unsafe_buffer" "/home/nw1728/y2q1/AlgoDS/2/week2-code/unsafe_buffer/tests/unsafe_buffer_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/2/week2-code/build/unsafe_buffer
+"unsafe_buffer_test" start time: Sep 16 10:43 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: 4 Hello***** 
+ got ello
+ expected oello
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Failed.
+"unsafe_buffer_test" end time: Sep 16 10:43 CEST
+"unsafe_buffer_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/7 Testing: anagrams_test
+6/7 Test: anagrams_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/2/week2-code/scripts/test_target.py" "anagrams" "/home/nw1728/y2q1/AlgoDS/2/week2-code/anagrams/tests/anagrams_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/2/week2-code/build/anagrams
+"anagrams_test" start time: Sep 16 10:43 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: conversation
+the people's voices rant on
+ 
+ got 
+ expected voices rant on
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"anagrams_test" end time: Sep 16 10:43 CEST
+"anagrams_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/7 Testing: subarray_sum_test
+7/7 Test: subarray_sum_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/2/week2-code/scripts/test_target.py" "subarray_sum" "/home/nw1728/y2q1/AlgoDS/2/week2-code/subarray_sum/tests/subarray_sum_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/2/week2-code/build/subarray_sum
+"subarray_sum_test" start time: Sep 16 10:43 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [1, 2, 3, 4, 5] 0 
+ got 
+ expected []
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"subarray_sum_test" end time: Sep 16 10:43 CEST
+"subarray_sum_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 16 10:43 CEST

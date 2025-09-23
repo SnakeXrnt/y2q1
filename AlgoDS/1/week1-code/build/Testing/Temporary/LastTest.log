@@ -1,0 +1,148 @@
+Start testing: Sep 03 21:32 CEST
+----------------------------------------------------------
+1/8 Testing: first_occurrence_test
+1/8 Test: first_occurrence_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/1/week1-code/scripts/test_target.py" "first_occurrence" "/home/nw1728/y2q1/AlgoDS/1/week1-code/first_occurrence/tests/first_occurrence_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/1/week1-code/build/first_occurrence
+"first_occurrence_test" start time: Sep 03 21:32 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 42] 42 
+ got gimme the vector and the integer seperated with space ~~ 
+10
+ expected 10
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"first_occurrence_test" end time: Sep 03 21:32 CEST
+"first_occurrence_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: intersect_sets_test
+2/8 Test: intersect_sets_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/1/week1-code/scripts/test_target.py" "intersect_sets" "/home/nw1728/y2q1/AlgoDS/1/week1-code/intersect_sets/tests/intersection_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/1/week1-code/build/intersect_sets
+"intersect_sets_test" start time: Sep 03 21:32 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [1, 2, 3, 4, 5, 6, 7, 8, 9, 42] [1, 2, 3] 
+ got 
+ expected [1, 2, 3]
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"intersect_sets_test" end time: Sep 03 21:32 CEST
+"intersect_sets_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/8 Testing: partition_array_test
+3/8 Test: partition_array_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/1/week1-code/scripts/test_target.py" "partition_array" "/home/nw1728/y2q1/AlgoDS/1/week1-code/partition_array/tests/partition_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/1/week1-code/build/partition_array
+"partition_array_test" start time: Sep 03 21:32 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [] move 42 
+ got Enter array and value to move to end (e.g. [3, 1, 2, 3, 4, 3, 5] 3): []
+ expected []
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"partition_array_test" end time: Sep 03 21:32 CEST
+"partition_array_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: sorted_array_test_insert
+4/8 Test: sorted_array_test_insert
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/1/week1-code/scripts/test_target.py" "sorted_arrays" "/home/nw1728/y2q1/AlgoDS/1/week1-code/sorted_arrays/tests/insert_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/1/week1-code/build/sorted_arrays
+"sorted_array_test_insert" start time: Sep 03 21:32 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [1, 2, 3, 4, 5] insert 3 
+ got [1, 2, 3, 3, 4, 5]
+ expected [1, 2, 3, 4, 5]
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"sorted_array_test_insert" end time: Sep 03 21:32 CEST
+"sorted_array_test_insert" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: sorted_array_test_contains
+5/8 Test: sorted_array_test_contains
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/1/week1-code/scripts/test_target.py" "sorted_arrays" "/home/nw1728/y2q1/AlgoDS/1/week1-code/sorted_arrays/tests/contains_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/1/week1-code/build/sorted_arrays
+"sorted_array_test_contains" start time: Sep 03 21:32 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"sorted_array_test_contains" end time: Sep 03 21:32 CEST
+"sorted_array_test_contains" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: sorted_array_test_remove
+6/8 Test: sorted_array_test_remove
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/1/week1-code/scripts/test_target.py" "sorted_arrays" "/home/nw1728/y2q1/AlgoDS/1/week1-code/sorted_arrays/tests/remove_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/1/week1-code/build/sorted_arrays
+"sorted_array_test_remove" start time: Sep 03 21:32 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"sorted_array_test_remove" end time: Sep 03 21:32 CEST
+"sorted_array_test_remove" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: subtract_sets_test
+7/8 Test: subtract_sets_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/1/week1-code/scripts/test_target.py" "subtract_sets" "/home/nw1728/y2q1/AlgoDS/1/week1-code/subtract_sets/tests/subtract_sets_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/1/week1-code/build/subtract_sets
+"subtract_sets_test" start time: Sep 03 21:32 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [1, 2, 3, 4, 5, 6, 7, 8, 9, 42] [1, 2, 3] 
+ got 
+ expected [4, 5, 6, 7, 8, 9, 42]
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"subtract_sets_test" end time: Sep 03 21:32 CEST
+"subtract_sets_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: subtract_sets_inplace_test
+8/8 Test: subtract_sets_inplace_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/1/week1-code/scripts/test_target.py" "subtract_sets_inplace" "/home/nw1728/y2q1/AlgoDS/1/week1-code/subtract_sets_inplace/tests/subtract_sets_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/1/week1-code/build/subtract_sets_inplace
+"subtract_sets_inplace_test" start time: Sep 03 21:32 CEST
+Output:
+----------------------------------------------------------
+
+The answer for the following test input is incorrect: [1, 2, 3, 4, 5, 6, 7, 8, 9, 42] [1, 2, 3] 
+ got 
+ expected [4, 5, 6, 7, 8, 9, 42]
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"subtract_sets_inplace_test" end time: Sep 03 21:32 CEST
+"subtract_sets_inplace_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 03 21:32 CEST

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/list_union.dir/link.d CMakeFiles/list_union.dir/main.cpp.o -o list_union

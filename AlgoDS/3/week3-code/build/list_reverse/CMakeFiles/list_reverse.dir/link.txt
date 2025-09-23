@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/list_reverse.dir/link.d CMakeFiles/list_reverse.dir/main.cpp.o -o list_reverse

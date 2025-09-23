@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/1/week1-code/build/first_occurrence",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/1/week1-code/include  -o CMakeFiles/first_occurrence.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/1/week1-code/first_occurrence/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/1/week1-code/first_occurrence/main.cpp",
+  "output": "first_occurrence/CMakeFiles/first_occurrence.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/1/week1-code/build/intersect_sets",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/1/week1-code/include  -o CMakeFiles/intersect_sets.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/1/week1-code/intersect_sets/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/1/week1-code/intersect_sets/main.cpp",
+  "output": "intersect_sets/CMakeFiles/intersect_sets.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/1/week1-code/build/partition_array",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/1/week1-code/include  -o CMakeFiles/partition_array.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/1/week1-code/partition_array/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/1/week1-code/partition_array/main.cpp",
+  "output": "partition_array/CMakeFiles/partition_array.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/1/week1-code/build/sorted_arrays",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/1/week1-code/include  -o CMakeFiles/sorted_arrays.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/1/week1-code/sorted_arrays/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/1/week1-code/sorted_arrays/main.cpp",
+  "output": "sorted_arrays/CMakeFiles/sorted_arrays.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/1/week1-code/build/subtract_sets",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/1/week1-code/include  -o CMakeFiles/subtract_sets.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/1/week1-code/subtract_sets/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/1/week1-code/subtract_sets/main.cpp",
+  "output": "subtract_sets/CMakeFiles/subtract_sets.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/1/week1-code/build/subtract_sets_inplace",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/1/week1-code/include  -o CMakeFiles/subtract_sets_inplace.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/1/week1-code/subtract_sets_inplace/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/1/week1-code/subtract_sets_inplace/main.cpp",
+  "output": "subtract_sets_inplace/CMakeFiles/subtract_sets_inplace.dir/main.cpp.o"
+}
+]

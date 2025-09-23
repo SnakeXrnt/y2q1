@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/list_insertions.dir/link.d CMakeFiles/list_insertions.dir/main.cpp.o -o list_insertions

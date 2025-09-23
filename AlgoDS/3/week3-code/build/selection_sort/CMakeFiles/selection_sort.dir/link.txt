@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/selection_sort.dir/link.d CMakeFiles/selection_sort.dir/main.cpp.o -o selection_sort  ../libcounter.a

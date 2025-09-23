@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/subarray_sum.dir/link.d CMakeFiles/subarray_sum.dir/main.cpp.o -o subarray_sum

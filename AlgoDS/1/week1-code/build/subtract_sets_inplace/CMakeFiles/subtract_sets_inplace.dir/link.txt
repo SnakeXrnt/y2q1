@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/subtract_sets_inplace.dir/link.d CMakeFiles/subtract_sets_inplace.dir/main.cpp.o -o subtract_sets_inplace

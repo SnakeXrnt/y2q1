@@ -1,0 +1,18 @@
+Start testing: Sep 16 22:26 CEST
+----------------------------------------------------------
+1/1 Testing: list_insertions_test
+1/1 Test: list_insertions_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/2/week2-code/scripts/test_target.py" "list_insertions" "/home/nw1728/y2q1/AlgoDS/2/week2-code/list_insertions/tests/list_insertions_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/2/week2-code/build/list_insertions
+"list_insertions_test" start time: Sep 16 22:26 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"list_insertions_test" end time: Sep 16 22:26 CEST
+"list_insertions_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 16 22:26 CEST
