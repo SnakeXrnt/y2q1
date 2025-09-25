@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/tree_isect.dir/link.d CMakeFiles/tree_isect.dir/main.cpp.o -o tree_isect  ../libnodeptr.a

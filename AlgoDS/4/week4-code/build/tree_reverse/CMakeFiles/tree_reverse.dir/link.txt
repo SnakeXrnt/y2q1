@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/tree_reverse.dir/link.d CMakeFiles/tree_reverse.dir/main.cpp.o -o tree_reverse

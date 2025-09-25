@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/tree_height.dir/link.d CMakeFiles/tree_height.dir/main.cpp.o -o tree_height  ../libnodeptr.a

@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/4/week4-code/build",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/4/week4-code/include -std=c++20 -o CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp",
+  "output": "CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_reverse",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/4/week4-code/include -std=c++20 -Wall -Wextra -Werror -fsanitize=address -fsanitize=undefined -o CMakeFiles/tree_reverse.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/tree_reverse/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/4/week4-code/tree_reverse/main.cpp",
+  "output": "tree_reverse/CMakeFiles/tree_reverse.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/4/week4-code/build/array_to_bst",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/4/week4-code/include -std=c++20 -Wall -Wextra -Werror -fsanitize=address -fsanitize=undefined -o CMakeFiles/array_to_bst.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/array_to_bst/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/4/week4-code/array_to_bst/main.cpp",
+  "output": "array_to_bst/CMakeFiles/array_to_bst.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/4/week4-code/build/manage_bst",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/4/week4-code/include -std=c++20 -Wall -Wextra -Werror -fsanitize=address -fsanitize=undefined -o CMakeFiles/manage_bst.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/manage_bst/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/4/week4-code/manage_bst/main.cpp",
+  "output": "manage_bst/CMakeFiles/manage_bst.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/4/week4-code/build/subsets",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/4/week4-code/include -std=c++20 -Wall -Wextra -Werror -fsanitize=address -fsanitize=undefined -o CMakeFiles/subsets.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/subsets/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/4/week4-code/subsets/main.cpp",
+  "output": "subsets/CMakeFiles/subsets.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/4/week4-code/include -std=c++20 -Wall -Wextra -Werror -fsanitize=address -fsanitize=undefined -o CMakeFiles/tree_height.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp",
+  "output": "tree_height/CMakeFiles/tree_height.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_slice",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/4/week4-code/include -std=c++20 -Wall -Wextra -Werror -fsanitize=address -fsanitize=undefined -o CMakeFiles/tree_slice.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/tree_slice/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/4/week4-code/tree_slice/main.cpp",
+  "output": "tree_slice/CMakeFiles/tree_slice.dir/main.cpp.o"
+},
+{
+  "directory": "/home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_isect",
+  "command": "/usr/bin/c++  -I/home/nw1728/y2q1/AlgoDS/4/week4-code/include -std=c++20 -Wall -Wextra -Werror -fsanitize=address -fsanitize=undefined -o CMakeFiles/tree_isect.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/tree_isect/main.cpp",
+  "file": "/home/nw1728/y2q1/AlgoDS/4/week4-code/tree_isect/main.cpp",
+  "output": "tree_isect/CMakeFiles/tree_isect.dir/main.cpp.o"
+}
+]

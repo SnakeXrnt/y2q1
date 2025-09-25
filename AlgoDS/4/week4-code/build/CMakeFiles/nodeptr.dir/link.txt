@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnodeptr.a CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o
+/usr/bin/ranlib libnodeptr.a

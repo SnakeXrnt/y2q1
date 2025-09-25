@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/subsets.dir/link.d CMakeFiles/subsets.dir/main.cpp.o -o subsets  ../libnodeptr.a

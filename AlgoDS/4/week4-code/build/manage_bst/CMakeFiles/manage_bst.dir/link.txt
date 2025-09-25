@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/manage_bst.dir/link.d CMakeFiles/manage_bst.dir/main.cpp.o -o manage_bst
