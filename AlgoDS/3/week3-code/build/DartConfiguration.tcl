@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/nw1728/y2q1/AlgoDS/3/week3-code
-BuildDirectory: /home/nw1728/y2q1/AlgoDS/3/week3-code/build
+SourceDirectory: /home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code
+BuildDirectory: /home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: 1770np
+Site: fedora
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/nw1728/y2q1/AlgoDS/3/week3-code"
+ConfigureCommand: "/usr/bin/cmake" "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

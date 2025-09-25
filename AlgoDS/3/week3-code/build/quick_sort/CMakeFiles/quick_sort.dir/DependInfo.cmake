@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nw1728/y2q1/AlgoDS/3/week3-code/quick_sort/main.cpp" "quick_sort/CMakeFiles/quick_sort.dir/main.cpp.o" "gcc" "quick_sort/CMakeFiles/quick_sort.dir/main.cpp.o.d"
+  "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/quick_sort/main.cpp" "quick_sort/CMakeFiles/quick_sort.dir/main.cpp.o" "gcc" "quick_sort/CMakeFiles/quick_sort.dir/main.cpp.o.d"
   "" "quick_sort/quick_sort" "gcc" "quick_sort/CMakeFiles/quick_sort.dir/link.d"
   )
 

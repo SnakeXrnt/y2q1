@@ -1,4 +1,4 @@
-# Install script for directory: /home/nw1728/y2q1/AlgoDS/3/week3-code/expression_eval
+# Install script for directory: /home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/expression_eval
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,6 +45,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/nw1728/y2q1/AlgoDS/3/week3-code/build/expression_eval/install_local_manifest.txt"
+  file(WRITE "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build/expression_eval/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

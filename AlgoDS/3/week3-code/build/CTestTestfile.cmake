@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/nw1728/y2q1/AlgoDS/3/week3-code
-# Build directory: /home/nw1728/y2q1/AlgoDS/3/week3-code/build
+# Source directory: /home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code
+# Build directory: /home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

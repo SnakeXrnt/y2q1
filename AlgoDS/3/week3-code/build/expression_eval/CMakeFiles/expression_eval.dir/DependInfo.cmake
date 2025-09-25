@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nw1728/y2q1/AlgoDS/3/week3-code/expression_eval/main.cpp" "expression_eval/CMakeFiles/expression_eval.dir/main.cpp.o" "gcc" "expression_eval/CMakeFiles/expression_eval.dir/main.cpp.o.d"
+  "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/expression_eval/main.cpp" "expression_eval/CMakeFiles/expression_eval.dir/main.cpp.o" "gcc" "expression_eval/CMakeFiles/expression_eval.dir/main.cpp.o.d"
   "" "expression_eval/expression_eval" "gcc" "expression_eval/CMakeFiles/expression_eval.dir/link.d"
   )
 

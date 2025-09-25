@@ -1,4 +1,4 @@
-# Install script for directory: /home/nw1728/y2q1/AlgoDS/3/week3-code
+# Install script for directory: /home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,18 +44,18 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nw1728/y2q1/AlgoDS/3/week3-code/build/selection_sort/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/3/week3-code/build/list_reverse/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/3/week3-code/build/expression_eval/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/3/week3-code/build/quick_sort/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/3/week3-code/build/merge_sort/cmake_install.cmake")
+  include("/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build/selection_sort/cmake_install.cmake")
+  include("/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build/list_reverse/cmake_install.cmake")
+  include("/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build/expression_eval/cmake_install.cmake")
+  include("/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build/quick_sort/cmake_install.cmake")
+  include("/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build/merge_sort/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/nw1728/y2q1/AlgoDS/3/week3-code/build/install_local_manifest.txt"
+  file(WRITE "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -71,6 +71,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/nw1728/y2q1/AlgoDS/3/week3-code/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

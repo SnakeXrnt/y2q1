@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nw1728/y2q1/AlgoDS/3/week3-code/shared/counter.cpp" "CMakeFiles/counter.dir/shared/counter.cpp.o" "gcc" "CMakeFiles/counter.dir/shared/counter.cpp.o.d"
+  "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/shared/counter.cpp" "CMakeFiles/counter.dir/shared/counter.cpp.o" "gcc" "CMakeFiles/counter.dir/shared/counter.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

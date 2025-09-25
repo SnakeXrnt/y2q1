@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nw1728/y2q1/AlgoDS/3/week3-code/list_reverse/main.cpp" "list_reverse/CMakeFiles/list_reverse.dir/main.cpp.o" "gcc" "list_reverse/CMakeFiles/list_reverse.dir/main.cpp.o.d"
+  "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/list_reverse/main.cpp" "list_reverse/CMakeFiles/list_reverse.dir/main.cpp.o" "gcc" "list_reverse/CMakeFiles/list_reverse.dir/main.cpp.o.d"
   "" "list_reverse/list_reverse" "gcc" "list_reverse/CMakeFiles/list_reverse.dir/link.d"
   )
 
