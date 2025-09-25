@@ -1,6 +1,6 @@
 CMakeFiles/project-template.dir/main.c.o: \
  /home/nw1728/y2q1/microcontroler/week3/project-template/main.c \
- /home/nw1728/pico/pico-sdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
+ /home/nw1728/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
  /home/nw1728/pico/pico-sdk/src/common/pico_base_headers/include/pico.h \
  /home/nw1728/pico/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
  /home/nw1728/pico/pico-sdk/src/common/pico_base_headers/include/pico/assert.h \
@@ -33,14 +33,9 @@ CMakeFiles/project-template.dir/main.c.o: \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
  /home/nw1728/pico/pico-sdk/src/common/pico_base_headers/include/pico/error.h \
- /home/nw1728/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
- /usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h \
- /home/nw1728/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
- /home/nw1728/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
- /home/nw1728/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+ /home/nw1728/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
  /home/nw1728/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
- /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
- /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+ /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h \
  /home/nw1728/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
@@ -49,6 +44,7 @@ CMakeFiles/project-template.dir/main.c.o: \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
  /home/nw1728/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+ /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
  /home/nw1728/pico/pico-sdk/src/rp2040/pico_platform/include/pico/platform/cpu_regs.h \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/m0plus.h \
@@ -61,14 +57,11 @@ CMakeFiles/project-template.dir/main.c.o: \
  /home/nw1728/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
- /home/nw1728/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /usr/arm-none-eabi/include/stdio.h \
- /usr/arm-none-eabi/include/sys/reent.h \
- /usr/arm-none-eabi/include/_ansi.h \
- /usr/arm-none-eabi/include/sys/_types.h \
- /usr/arm-none-eabi/include/machine/_types.h \
- /usr/arm-none-eabi/include/sys/lock.h \
- /usr/arm-none-eabi/include/sys/stdio.h \
- /home/nw1728/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
- /home/nw1728/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
- /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h
+ /home/nw1728/pico/pico-sdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
+ /home/nw1728/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+ /usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h \
+ /home/nw1728/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+ /home/nw1728/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+ /home/nw1728/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+ /home/nw1728/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+ /home/nw1728/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
