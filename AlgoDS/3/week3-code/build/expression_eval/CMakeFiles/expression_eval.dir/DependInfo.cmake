@@ -8,16 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/expression_eval/main.cpp" "expression_eval/CMakeFiles/expression_eval.dir/main.cpp.o" "gcc" "expression_eval/CMakeFiles/expression_eval.dir/main.cpp.o.d"
-  "" "expression_eval/expression_eval" "gcc" "expression_eval/CMakeFiles/expression_eval.dir/link.d"
+  "/Users/macair/Desktop/school/y2q1/AlgoDS/3/week3-code/expression_eval/main.cpp" "expression_eval/CMakeFiles/expression_eval.dir/main.cpp.o" "gcc" "expression_eval/CMakeFiles/expression_eval.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
 set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

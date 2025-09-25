@@ -1,1 +1,1 @@
-/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/expression_eval.dir/link.d CMakeFiles/expression_eval.dir/main.cpp.o -o expression_eval
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address -fsanitize=undefined CMakeFiles/expression_eval.dir/main.cpp.o -o expression_eval 

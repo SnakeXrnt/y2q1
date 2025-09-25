@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/merge_sort.dir/link.d"
   "CMakeFiles/merge_sort.dir/main.cpp.o"
   "CMakeFiles/merge_sort.dir/main.cpp.o.d"
   "merge_sort"

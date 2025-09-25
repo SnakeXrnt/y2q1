@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/quick_sort.dir/link.d"
   "CMakeFiles/quick_sort.dir/main.cpp.o"
   "CMakeFiles/quick_sort.dir/main.cpp.o.d"
   "quick_sort"

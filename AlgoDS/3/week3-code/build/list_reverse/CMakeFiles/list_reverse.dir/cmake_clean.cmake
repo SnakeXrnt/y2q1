@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/list_reverse.dir/link.d"
   "CMakeFiles/list_reverse.dir/main.cpp.o"
   "CMakeFiles/list_reverse.dir/main.cpp.o.d"
   "list_reverse"

@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code
-BuildDirectory: /home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code/build
+SourceDirectory: /Users/macair/Desktop/school/y2q1/AlgoDS/3/week3-code
+BuildDirectory: /Users/macair/Desktop/school/y2q1/AlgoDS/3/week3-code/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: fedora
+Site: MacBookAir.home
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-c++
+BuildName: Darwin-c++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/coxaexs/Desktop/school/y2q1/AlgoDS/3/week3-code"
-MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.27.8/bin/cmake" "/Users/macair/Desktop/school/y2q1/AlgoDS/3/week3-code"
+MakeCommand: /usr/local/Cellar/cmake/3.27.8/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -63,8 +63,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: /usr/bin/c++
-CompilerVersion: 15.2.1
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++
+CompilerVersion: 15.0.0.15000309
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -94,9 +94,6 @@ TimeOut: 1500
 # During parallel testing CTest will not start a new test if doing
 # so would cause the system load to exceed this value.
 TestLoad: 
-
-TLSVerify: 
-TLSVersion: 
 
 UseLaunchers: 
 CurlOptions: 
