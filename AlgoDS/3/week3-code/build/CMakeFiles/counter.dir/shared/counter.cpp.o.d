@@ -1,15 +1,19 @@
 CMakeFiles/counter.dir/shared/counter.cpp.o: \
- /home/nw1728/y2q1/AlgoDS/3/week3-code/shared/counter.cpp \
- /usr/include/stdc-predef.h \
- /home/nw1728/y2q1/AlgoDS/3/week3-code/include/counter.h \
- /usr/include/c++/15.2.1/cstddef \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
- /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/include/c++/15.2.1/pstl/pstl_config.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
- /usr/include/c++/15.2.1/bits/version.h
+  /Users/macair/Desktop/school/y2q1/AlgoDS/3/week3-code/shared/counter.cpp \
+  /Users/macair/Desktop/school/y2q1/AlgoDS/3/week3-code/include/counter.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstddef \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config_site \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__verbose_abort \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__availability \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/enable_if.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/integral_constant.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_integral.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_cv.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_const.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/version \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h

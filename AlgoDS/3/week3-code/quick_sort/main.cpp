@@ -10,6 +10,11 @@ std::vector<std::string>::iterator partition(std::vector<std::string>::iterator 
         return begin;
     }
 
+    // Use middle element as pivot to avoid worst-case performance on sorted data
+    auto middle = begin + std::distance(begin, end) / 2;
+    std::swap(*middle, *(end - 1));
+    sax::counter::instance().inc_swaps();
+
     std::string pivot = *(end - 1);
 
     auto i = begin;
@@ -88,5 +93,11 @@ int main() {
     for(const auto &s : words) {
         output << s << '\n';
     }
+
+    // Print statistics
+    std::cout << "Data size: " << words.size() << std::endl;
+    std::cout << "Comparisons: " << sax::counter::instance().comparisons() << std::endl;
+    std::cout << "Swaps: " << sax::counter::instance().swaps() << std::endl;
+
     return 0;
 }
