@@ -151,4 +151,11 @@ tree_slice/CMakeFiles/tree_slice.dir/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
  /usr/include/c++/15.2.1/bits/istream.tcc \
  /home/nw1728/y2q1/AlgoDS/4/week4-code/include/bintree.h \
- /usr/include/c++/15.2.1/sstream /usr/include/c++/15.2.1/bits/sstream.tcc
+ /usr/include/c++/15.2.1/sstream /usr/include/c++/15.2.1/bits/sstream.tcc \
+ /home/nw1728/y2q1/AlgoDS/4/week4-code/include/node_ptr.h \
+ /usr/include/c++/15.2.1/stack /usr/include/c++/15.2.1/deque \
+ /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
+ /usr/include/c++/15.2.1/bits/stl_deque.h \
+ /usr/include/c++/15.2.1/bits/deque.tcc \
+ /usr/include/c++/15.2.1/bits/stl_stack.h \
+ /home/nw1728/y2q1/AlgoDS/4/week4-code/include/bintree.h

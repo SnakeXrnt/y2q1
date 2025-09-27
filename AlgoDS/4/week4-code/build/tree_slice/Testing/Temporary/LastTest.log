@@ -1,0 +1,19 @@
+Start testing: Sep 27 12:29 CEST
+----------------------------------------------------------
+1/1 Testing: tree_slice_test
+1/1 Test: tree_slice_test
+Command: "/usr/bin/python3" "/home/nw1728/y2q1/AlgoDS/4/week4-code/scripts/test.py" "tree_slice" "/home/nw1728/y2q1/AlgoDS/4/week4-code/tree_slice/tests/tree_slice_test_cases"
+Directory: /home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_slice
+"tree_slice_test" start time: Sep 27 12:29 CEST
+Output:
+----------------------------------------------------------
+All test cases passed
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"tree_slice_test" end time: Sep 27 12:29 CEST
+"tree_slice_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 27 12:29 CEST
