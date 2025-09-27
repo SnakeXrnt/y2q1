@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "bintree.h" // for binary_tree_node
+#include "node_ptr.h"
 
 int main() {
     /* TODO:
@@ -11,5 +12,13 @@ int main() {
 
         The time complexity of your program must be O(n + m), where n and m are the sizes of the two trees.
     */
+
+    sax::binary_tree_node<int> * one = nullptr;
+    sax::binary_tree_node<int> * two = nullptr;
+
+    std::cin >> one >> two;
+
+    sax::node_ptr<int> it(one);
+
     return 0;
 }
