@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/partition_array.dir/link.d CMakeFiles/partition_array.dir/main.cpp.o -o partition_array

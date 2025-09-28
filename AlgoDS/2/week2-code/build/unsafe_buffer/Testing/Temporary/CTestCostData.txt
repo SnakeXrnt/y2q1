@@ -1,3 +1,0 @@
-unsafe_buffer_test 0 0
----
-unsafe_buffer_test

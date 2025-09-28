@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/intersect_sets.dir/link.d CMakeFiles/intersect_sets.dir/main.cpp.o -o intersect_sets

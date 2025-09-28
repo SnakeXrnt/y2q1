@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/sorted_arrays.dir/link.d CMakeFiles/sorted_arrays.dir/main.cpp.o -o sorted_arrays

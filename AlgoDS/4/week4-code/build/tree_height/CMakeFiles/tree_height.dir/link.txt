@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address -fsanitize=undefined CMakeFiles/tree_height.dir/main.cpp.o -o tree_height  ../libnodeptr.a

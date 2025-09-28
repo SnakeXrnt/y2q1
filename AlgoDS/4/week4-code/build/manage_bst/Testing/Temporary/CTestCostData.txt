@@ -1,5 +1,0 @@
-bst_remove_leaf_test 2 0.721148
-bst_remove_single_child_test 2 0.585217
-bst_remove_tricky_test 2 0.589178
-bst_insert_test 2 1.61805
----

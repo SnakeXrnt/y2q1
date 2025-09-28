@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libcounter.a CMakeFiles/counter.dir/shared/counter.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libcounter.a
