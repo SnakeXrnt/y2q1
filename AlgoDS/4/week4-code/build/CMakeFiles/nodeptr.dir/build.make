@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code
+CMAKE_SOURCE_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code/build
+CMAKE_BINARY_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/nodeptr.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/nodeptr.dir/codegen:
 .PHONY : CMakeFiles/nodeptr.dir/codegen
 
 CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o: CMakeFiles/nodeptr.dir/flags.make
-CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o: /home/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp
+CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o: /Users/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp
 CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o: CMakeFiles/nodeptr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o -MF CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o.d -o CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o -MF CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o.d -o CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o -c /Users/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp
 
 CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp > CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp > CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.i
 
 CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp -o CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp -o CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.s
 
 # Object files for target nodeptr
 nodeptr_OBJECTS = \
@@ -96,7 +96,7 @@ nodeptr_EXTERNAL_OBJECTS =
 libnodeptr.a: CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o
 libnodeptr.a: CMakeFiles/nodeptr.dir/build.make
 libnodeptr.a: CMakeFiles/nodeptr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libnodeptr.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libnodeptr.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/nodeptr.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nodeptr.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/nodeptr.dir/clean:
 .PHONY : CMakeFiles/nodeptr.dir/clean
 
 CMakeFiles/nodeptr.dir/depend:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nw1728/y2q1/AlgoDS/4/week4-code /home/nw1728/y2q1/AlgoDS/4/week4-code /home/nw1728/y2q1/AlgoDS/4/week4-code/build /home/nw1728/y2q1/AlgoDS/4/week4-code/build /home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles/nodeptr.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nw1728/y2q1/AlgoDS/4/week4-code /Users/nw1728/y2q1/AlgoDS/4/week4-code /Users/nw1728/y2q1/AlgoDS/4/week4-code/build /Users/nw1728/y2q1/AlgoDS/4/week4-code/build /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles/nodeptr.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/nodeptr.dir/depend
 

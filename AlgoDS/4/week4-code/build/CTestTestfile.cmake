@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/nw1728/y2q1/AlgoDS/4/week4-code
-# Build directory: /home/nw1728/y2q1/AlgoDS/4/week4-code/build
+# Source directory: /Users/nw1728/y2q1/AlgoDS/4/week4-code
+# Build directory: /Users/nw1728/y2q1/AlgoDS/4/week4-code/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

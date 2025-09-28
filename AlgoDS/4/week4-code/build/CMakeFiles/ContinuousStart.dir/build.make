@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code
+CMAKE_SOURCE_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code/build
+CMAKE_BINARY_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code/build
 
 # Utility rule file for ContinuousStart.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ContinuousStart.dir/compiler_depend.make
 include CMakeFiles/ContinuousStart.dir/progress.make
 
 CMakeFiles/ContinuousStart:
-	/usr/bin/ctest -DMODEL=Continuous -DACTIONS=Start -S CMakeFiles/CTestScript.cmake -V
+	/usr/local/bin/ctest -DMODEL=Continuous -DACTIONS=Start -S CMakeFiles/CTestScript.cmake -V
 
 CMakeFiles/ContinuousStart.dir/codegen:
 .PHONY : CMakeFiles/ContinuousStart.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/ContinuousStart.dir/clean:
 .PHONY : CMakeFiles/ContinuousStart.dir/clean
 
 CMakeFiles/ContinuousStart.dir/depend:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nw1728/y2q1/AlgoDS/4/week4-code /home/nw1728/y2q1/AlgoDS/4/week4-code /home/nw1728/y2q1/AlgoDS/4/week4-code/build /home/nw1728/y2q1/AlgoDS/4/week4-code/build /home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles/ContinuousStart.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nw1728/y2q1/AlgoDS/4/week4-code /Users/nw1728/y2q1/AlgoDS/4/week4-code /Users/nw1728/y2q1/AlgoDS/4/week4-code/build /Users/nw1728/y2q1/AlgoDS/4/week4-code/build /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles/ContinuousStart.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ContinuousStart.dir/depend
 

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code
+CMAKE_SOURCE_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code/build
+CMAKE_BINARY_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code/build
 
 # Utility rule file for ContinuousUpdate.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ContinuousUpdate.dir/compiler_depend.make
 include CMakeFiles/ContinuousUpdate.dir/progress.make
 
 CMakeFiles/ContinuousUpdate:
-	/usr/bin/ctest -DMODEL=Continuous -DACTIONS=Update -S CMakeFiles/CTestScript.cmake -V
+	/usr/local/bin/ctest -DMODEL=Continuous -DACTIONS=Update -S CMakeFiles/CTestScript.cmake -V
 
 CMakeFiles/ContinuousUpdate.dir/codegen:
 .PHONY : CMakeFiles/ContinuousUpdate.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/ContinuousUpdate.dir/clean:
 .PHONY : CMakeFiles/ContinuousUpdate.dir/clean
 
 CMakeFiles/ContinuousUpdate.dir/depend:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nw1728/y2q1/AlgoDS/4/week4-code /home/nw1728/y2q1/AlgoDS/4/week4-code /home/nw1728/y2q1/AlgoDS/4/week4-code/build /home/nw1728/y2q1/AlgoDS/4/week4-code/build /home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nw1728/y2q1/AlgoDS/4/week4-code /Users/nw1728/y2q1/AlgoDS/4/week4-code /Users/nw1728/y2q1/AlgoDS/4/week4-code/build /Users/nw1728/y2q1/AlgoDS/4/week4-code/build /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ContinuousUpdate.dir/depend
 

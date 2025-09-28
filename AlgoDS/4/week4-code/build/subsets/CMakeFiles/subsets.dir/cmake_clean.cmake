@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/subsets.dir/link.d"
   "CMakeFiles/subsets.dir/main.cpp.o"
   "CMakeFiles/subsets.dir/main.cpp.o.d"
   "subsets"

@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nw1728/y2q1/AlgoDS/4/week4-code/manage_bst/main.cpp" "manage_bst/CMakeFiles/manage_bst.dir/main.cpp.o" "gcc" "manage_bst/CMakeFiles/manage_bst.dir/main.cpp.o.d"
-  "" "manage_bst/manage_bst" "gcc" "manage_bst/CMakeFiles/manage_bst.dir/link.d"
+  "/Users/nw1728/y2q1/AlgoDS/4/week4-code/manage_bst/main.cpp" "manage_bst/CMakeFiles/manage_bst.dir/main.cpp.o" "gcc" "manage_bst/CMakeFiles/manage_bst.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

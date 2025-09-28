@@ -1,6 +1,7 @@
 #include "node_ptr.h"
 
-namespace sax
-{
-}
+#include <stack>    // for std::stack
+#include "bintree.h"
 
+namespace sax {
+}

@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tree_height.dir/link.d"
   "CMakeFiles/tree_height.dir/main.cpp.o"
   "CMakeFiles/tree_height.dir/main.cpp.o.d"
   "tree_height"

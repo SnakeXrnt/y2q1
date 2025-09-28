@@ -27,6 +27,10 @@ namespace sax {
                 push_left_path(node->right);
             }
         }
+        node_ptr& operator++() {
+            move_next();
+            return *this;
+        }
 
         
 

@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nw1728/y2q1/AlgoDS/4/week4-code/subsets/main.cpp" "subsets/CMakeFiles/subsets.dir/main.cpp.o" "gcc" "subsets/CMakeFiles/subsets.dir/main.cpp.o.d"
-  "" "subsets/subsets" "gcc" "subsets/CMakeFiles/subsets.dir/link.d"
+  "/Users/nw1728/y2q1/AlgoDS/4/week4-code/subsets/main.cpp" "subsets/CMakeFiles/subsets.dir/main.cpp.o" "gcc" "subsets/CMakeFiles/subsets.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

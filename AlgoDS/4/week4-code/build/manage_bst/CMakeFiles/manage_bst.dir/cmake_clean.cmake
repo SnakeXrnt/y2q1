@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/manage_bst.dir/link.d"
   "CMakeFiles/manage_bst.dir/main.cpp.o"
   "CMakeFiles/manage_bst.dir/main.cpp.o.d"
   "manage_bst"

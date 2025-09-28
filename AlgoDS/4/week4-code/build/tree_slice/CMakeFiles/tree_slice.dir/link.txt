@@ -1,1 +1,1 @@
-/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/tree_slice.dir/link.d CMakeFiles/tree_slice.dir/main.cpp.o -o tree_slice  ../libnodeptr.a
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address -fsanitize=undefined CMakeFiles/tree_slice.dir/main.cpp.o -o tree_slice  ../libnodeptr.a

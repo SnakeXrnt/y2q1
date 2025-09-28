@@ -1,1 +1,1 @@
-/usr/bin/c++ -fsanitize=address -fsanitize=undefined -Wl,--dependency-file=CMakeFiles/manage_bst.dir/link.d CMakeFiles/manage_bst.dir/main.cpp.o -o manage_bst
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address -fsanitize=undefined CMakeFiles/manage_bst.dir/main.cpp.o -o manage_bst

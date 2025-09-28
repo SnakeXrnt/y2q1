@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nw1728/y2q1/AlgoDS/4/week4-code/tree_isect/main.cpp" "tree_isect/CMakeFiles/tree_isect.dir/main.cpp.o" "gcc" "tree_isect/CMakeFiles/tree_isect.dir/main.cpp.o.d"
-  "" "tree_isect/tree_isect" "gcc" "tree_isect/CMakeFiles/tree_isect.dir/link.d"
+  "/Users/nw1728/y2q1/AlgoDS/4/week4-code/tree_isect/main.cpp" "tree_isect/CMakeFiles/tree_isect.dir/main.cpp.o" "gcc" "tree_isect/CMakeFiles/tree_isect.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

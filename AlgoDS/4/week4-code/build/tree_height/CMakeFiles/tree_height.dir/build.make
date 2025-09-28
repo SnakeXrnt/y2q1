@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code
+CMAKE_SOURCE_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code/build
+CMAKE_BINARY_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code/build
 
 # Include any dependencies generated for this target.
 include tree_height/CMakeFiles/tree_height.dir/depend.make
@@ -73,18 +73,18 @@ tree_height/CMakeFiles/tree_height.dir/codegen:
 .PHONY : tree_height/CMakeFiles/tree_height.dir/codegen
 
 tree_height/CMakeFiles/tree_height.dir/main.cpp.o: tree_height/CMakeFiles/tree_height.dir/flags.make
-tree_height/CMakeFiles/tree_height.dir/main.cpp.o: /home/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp
+tree_height/CMakeFiles/tree_height.dir/main.cpp.o: /Users/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp
 tree_height/CMakeFiles/tree_height.dir/main.cpp.o: tree_height/CMakeFiles/tree_height.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tree_height/CMakeFiles/tree_height.dir/main.cpp.o"
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tree_height/CMakeFiles/tree_height.dir/main.cpp.o -MF CMakeFiles/tree_height.dir/main.cpp.o.d -o CMakeFiles/tree_height.dir/main.cpp.o -c /home/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tree_height/CMakeFiles/tree_height.dir/main.cpp.o"
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tree_height/CMakeFiles/tree_height.dir/main.cpp.o -MF CMakeFiles/tree_height.dir/main.cpp.o.d -o CMakeFiles/tree_height.dir/main.cpp.o -c /Users/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp
 
 tree_height/CMakeFiles/tree_height.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tree_height.dir/main.cpp.i"
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp > CMakeFiles/tree_height.dir/main.cpp.i
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp > CMakeFiles/tree_height.dir/main.cpp.i
 
 tree_height/CMakeFiles/tree_height.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tree_height.dir/main.cpp.s"
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp -o CMakeFiles/tree_height.dir/main.cpp.s
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nw1728/y2q1/AlgoDS/4/week4-code/tree_height/main.cpp -o CMakeFiles/tree_height.dir/main.cpp.s
 
 # Object files for target tree_height
 tree_height_OBJECTS = \
@@ -95,21 +95,20 @@ tree_height_EXTERNAL_OBJECTS =
 
 tree_height/tree_height: tree_height/CMakeFiles/tree_height.dir/main.cpp.o
 tree_height/tree_height: tree_height/CMakeFiles/tree_height.dir/build.make
-tree_height/tree_height: tree_height/CMakeFiles/tree_height.dir/compiler_depend.ts
 tree_height/tree_height: libnodeptr.a
 tree_height/tree_height: tree_height/CMakeFiles/tree_height.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tree_height"
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tree_height.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tree_height"
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tree_height.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tree_height/CMakeFiles/tree_height.dir/build: tree_height/tree_height
 .PHONY : tree_height/CMakeFiles/tree_height.dir/build
 
 tree_height/CMakeFiles/tree_height.dir/clean:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && $(CMAKE_COMMAND) -P CMakeFiles/tree_height.dir/cmake_clean.cmake
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height && $(CMAKE_COMMAND) -P CMakeFiles/tree_height.dir/cmake_clean.cmake
 .PHONY : tree_height/CMakeFiles/tree_height.dir/clean
 
 tree_height/CMakeFiles/tree_height.dir/depend:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nw1728/y2q1/AlgoDS/4/week4-code /home/nw1728/y2q1/AlgoDS/4/week4-code/tree_height /home/nw1728/y2q1/AlgoDS/4/week4-code/build /home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height /home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height/CMakeFiles/tree_height.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nw1728/y2q1/AlgoDS/4/week4-code /Users/nw1728/y2q1/AlgoDS/4/week4-code/tree_height /Users/nw1728/y2q1/AlgoDS/4/week4-code/build /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height/CMakeFiles/tree_height.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : tree_height/CMakeFiles/tree_height.dir/depend
 

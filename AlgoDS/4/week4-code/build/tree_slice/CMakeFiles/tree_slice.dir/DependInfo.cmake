@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nw1728/y2q1/AlgoDS/4/week4-code/tree_slice/main.cpp" "tree_slice/CMakeFiles/tree_slice.dir/main.cpp.o" "gcc" "tree_slice/CMakeFiles/tree_slice.dir/main.cpp.o.d"
-  "" "tree_slice/tree_slice" "gcc" "tree_slice/CMakeFiles/tree_slice.dir/link.d"
+  "/Users/nw1728/y2q1/AlgoDS/4/week4-code/tree_slice/main.cpp" "tree_slice/CMakeFiles/tree_slice.dir/main.cpp.o" "gcc" "tree_slice/CMakeFiles/tree_slice.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

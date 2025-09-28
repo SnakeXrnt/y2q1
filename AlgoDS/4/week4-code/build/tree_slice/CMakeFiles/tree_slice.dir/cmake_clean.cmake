@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tree_slice.dir/link.d"
   "CMakeFiles/tree_slice.dir/main.cpp.o"
   "CMakeFiles/tree_slice.dir/main.cpp.o.d"
   "tree_slice"

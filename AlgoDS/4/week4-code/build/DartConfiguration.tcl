@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/nw1728/y2q1/AlgoDS/4/week4-code
-BuildDirectory: /home/nw1728/y2q1/AlgoDS/4/week4-code/build
+SourceDirectory: /Users/nw1728/y2q1/AlgoDS/4/week4-code
+BuildDirectory: /Users/nw1728/y2q1/AlgoDS/4/week4-code/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: 1770np
+Site: Ethans-MacBook-Pro.local
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-c++
+BuildName: Darwin-c++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/nw1728/y2q1/AlgoDS/4/week4-code"
-MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/usr/local/bin/cmake" "/Users/nw1728/y2q1/AlgoDS/4/week4-code"
+MakeCommand: /usr/local/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -64,7 +64,7 @@ UpdateType:
 
 # Compiler info
 Compiler: /usr/bin/c++
-CompilerVersion: 15.2.1
+CompilerVersion: 14.0.3.14030022
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

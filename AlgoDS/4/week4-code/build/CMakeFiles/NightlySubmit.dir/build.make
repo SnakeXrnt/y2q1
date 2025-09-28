@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code
+CMAKE_SOURCE_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code/build
+CMAKE_BINARY_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code/build
 
 # Utility rule file for NightlySubmit.
 
@@ -67,7 +67,7 @@ include CMakeFiles/NightlySubmit.dir/compiler_depend.make
 include CMakeFiles/NightlySubmit.dir/progress.make
 
 CMakeFiles/NightlySubmit:
-	/usr/bin/ctest -DMODEL=Nightly -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V
+	/usr/local/bin/ctest -DMODEL=Nightly -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V
 
 CMakeFiles/NightlySubmit.dir/codegen:
 .PHONY : CMakeFiles/NightlySubmit.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/NightlySubmit.dir/clean:
 .PHONY : CMakeFiles/NightlySubmit.dir/clean
 
 CMakeFiles/NightlySubmit.dir/depend:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nw1728/y2q1/AlgoDS/4/week4-code /home/nw1728/y2q1/AlgoDS/4/week4-code /home/nw1728/y2q1/AlgoDS/4/week4-code/build /home/nw1728/y2q1/AlgoDS/4/week4-code/build /home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles/NightlySubmit.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nw1728/y2q1/AlgoDS/4/week4-code /Users/nw1728/y2q1/AlgoDS/4/week4-code /Users/nw1728/y2q1/AlgoDS/4/week4-code/build /Users/nw1728/y2q1/AlgoDS/4/week4-code/build /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles/NightlySubmit.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/NightlySubmit.dir/depend
 

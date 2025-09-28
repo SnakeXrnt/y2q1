@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nw1728/y2q1/AlgoDS/4/week4-code/include
+CXX_INCLUDES = -I/Users/nw1728/y2q1/AlgoDS/4/week4-code/include
 
 CXX_FLAGS = -std=c++20
 

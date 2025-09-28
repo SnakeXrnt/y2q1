@@ -1,4 +1,4 @@
-# Install script for directory: /home/nw1728/y2q1/AlgoDS/4/week4-code
+# Install script for directory: /Users/nw1728/y2q1/AlgoDS/4/week4-code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,11 +27,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -44,20 +39,20 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_reverse/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/4/week4-code/build/array_to_bst/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/4/week4-code/build/manage_bst/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/4/week4-code/build/subsets/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_slice/cmake_install.cmake")
-  include("/home/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_isect/cmake_install.cmake")
+  include("/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_reverse/cmake_install.cmake")
+  include("/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/array_to_bst/cmake_install.cmake")
+  include("/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/manage_bst/cmake_install.cmake")
+  include("/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/subsets/cmake_install.cmake")
+  include("/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_height/cmake_install.cmake")
+  include("/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_slice/cmake_install.cmake")
+  include("/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/tree_isect/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/nw1728/y2q1/AlgoDS/4/week4-code/build/install_local_manifest.txt"
+  file(WRITE "/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -73,6 +68,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/nw1728/y2q1/AlgoDS/4/week4-code/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/nw1728/y2q1/AlgoDS/4/week4-code/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

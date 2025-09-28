@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/array_to_bst.dir/link.d"
   "CMakeFiles/array_to_bst.dir/main.cpp.o"
   "CMakeFiles/array_to_bst.dir/main.cpp.o.d"
   "array_to_bst"

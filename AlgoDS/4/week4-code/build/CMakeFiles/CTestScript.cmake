@@ -5,8 +5,8 @@
 cmake_minimum_required(VERSION 4.1.1)
 
 # CTest Start Step
-set(CTEST_SOURCE_DIRECTORY "/home/nw1728/y2q1/AlgoDS/4/week4-code")
-set(CTEST_BINARY_DIRECTORY "/home/nw1728/y2q1/AlgoDS/4/week4-code/build")
+set(CTEST_SOURCE_DIRECTORY "/Users/nw1728/y2q1/AlgoDS/4/week4-code")
+set(CTEST_BINARY_DIRECTORY "/Users/nw1728/y2q1/AlgoDS/4/week4-code/build")
 
 # CTest Update Step
 set(CTEST_UPDATE_COMMAND "")
@@ -61,8 +61,8 @@ set(CTEST_MEMORYCHECK_SANITIZER_OPTIONS "")
 set(CTEST_MEMORYCHECK_SUPPRESSIONS_FILE "")
 
 # CTest Submit Step
-set(CTEST_SITE "1770np")
-set(CTEST_BUILD_NAME "Linux-c++")
+set(CTEST_SITE "Ethans-MacBook-Pro.local")
+set(CTEST_BUILD_NAME "Darwin-c++")
 set(CTEST_SUBMIT_URL "http://")
 set(CTEST_SUBMIT_INACTIVITY_TIMEOUT "")
 set(CTEST_TLS_VERIFY "")

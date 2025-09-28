@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code
+CMAKE_SOURCE_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code/build
+CMAKE_BINARY_DIR = /Users/nw1728/y2q1/AlgoDS/4/week4-code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/nw1728/y2q1/AlgoDS/4/week4-code/build
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/usr/bin/ctest $(ARGS)
+	/usr/local/bin/ctest $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -78,7 +78,7 @@ test/fast: test
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles /home/nw1728/y2q1/AlgoDS/4/week4-code/build/array_to_bst//CMakeFiles/progress.marks
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles 0
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/array_to_bst//CMakeFiles/progress.marks
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nw1728/y2q1/AlgoDS/4/week4-code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/clean
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +113,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/preinstall
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/preinstall
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 array_to_bst/CMakeFiles/array_to_bst.dir/rule:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/CMakeFiles/array_to_bst.dir/rule
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_to_bst/CMakeFiles/array_to_bst.dir/rule
 .PHONY : array_to_bst/CMakeFiles/array_to_bst.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ array_to_bst: array_to_bst/CMakeFiles/array_to_bst.dir/rule
 
 # fast build rule for target.
 array_to_bst/fast:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f array_to_bst/CMakeFiles/array_to_bst.dir/build.make array_to_bst/CMakeFiles/array_to_bst.dir/build
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f array_to_bst/CMakeFiles/array_to_bst.dir/build.make array_to_bst/CMakeFiles/array_to_bst.dir/build
 .PHONY : array_to_bst/fast
 
 main.o: main.cpp.o
@@ -145,7 +145,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f array_to_bst/CMakeFiles/array_to_bst.dir/build.make array_to_bst/CMakeFiles/array_to_bst.dir/main.cpp.o
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f array_to_bst/CMakeFiles/array_to_bst.dir/build.make array_to_bst/CMakeFiles/array_to_bst.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -153,7 +153,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f array_to_bst/CMakeFiles/array_to_bst.dir/build.make array_to_bst/CMakeFiles/array_to_bst.dir/main.cpp.i
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f array_to_bst/CMakeFiles/array_to_bst.dir/build.make array_to_bst/CMakeFiles/array_to_bst.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -161,7 +161,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f array_to_bst/CMakeFiles/array_to_bst.dir/build.make array_to_bst/CMakeFiles/array_to_bst.dir/main.cpp.s
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(MAKE) $(MAKESILENT) -f array_to_bst/CMakeFiles/array_to_bst.dir/build.make array_to_bst/CMakeFiles/array_to_bst.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -188,6 +188,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/nw1728/y2q1/AlgoDS/4/week4-code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

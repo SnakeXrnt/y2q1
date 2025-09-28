@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp" "CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o" "gcc" "CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o.d"
+  "/Users/nw1728/y2q1/AlgoDS/4/week4-code/shared/node_ptr.cpp" "CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o" "gcc" "CMakeFiles/nodeptr.dir/shared/node_ptr.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
