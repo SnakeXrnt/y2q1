@@ -1,5 +1,42 @@
 #include <iostream>
+#include <string>
+#include <vector>
 #include "utils.h"
+#include <functional>
+
+
+struct string_hash {
+    size_t operator()(const std::string& str) const {
+        return std::_Hash_bytes(
+            str.data(),
+            str.size(),
+            static_cast<size_t>(0xc70f6907UL));
+    }
+};
+
+
+
+
+size_t probe_insert(std::vector<std::string>& table, const std::string& key, size_t slots) {
+    std::hash<std::string> hasher;  
+    size_t idx = hasher(key) % slots;
+
+    for (size_t i = 0; i < slots; i++) {
+        size_t pos = (idx + i) % slots;
+
+        if (table[pos] == key) {
+            
+            return pos;
+        }
+        if (table[pos] == "EMPTY") {
+            table[pos] = key;
+            return pos;
+        }
+    }
+    return slots; 
+}
+
+
 
 int main() {
     /* TODO:
@@ -28,6 +65,30 @@ int main() {
             [3, 5]
     */
 
-    // Hint: write a function to find an empty slot using linear probing
+    
+    
+
+    int slots; 
+    std::vector<std::string> strings;
+    std::cin >> slots >> strings;
+
+    std::vector<std::string> table(slots, "EMPTY");
+
+    for (const auto& s : strings) {
+        probe_insert(table, s, slots);
+    }
+
+    std::cout << "[";
+
+    for (size_t i = 0; i < table.size(); i++) {
+        std::cout << table[i];
+        if (i + 1 < table.size()) {
+            std::cout << ", ";
+
+        }
+    }
+
+    std::cout << "]" << std::endl;
+
     return 0;
 }
