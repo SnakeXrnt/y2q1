@@ -2,19 +2,6 @@
 #include <string>
 #include <vector>
 #include "utils.h"
-#include <functional>
-
-
-struct string_hash {
-    size_t operator()(const std::string& str) const {
-        return std::_Hash_bytes(
-            str.data(),
-            str.size(),
-            static_cast<size_t>(0xc70f6907UL));
-    }
-};
-
-
 
 
 size_t probe_insert(std::vector<std::string>& table, const std::string& key, size_t slots) {
