@@ -1,8 +1,9 @@
 
-#include "hardware/adc.h"
-#include "hardware/uart.h"
 #include "pico/stdlib.h"
 #include <hardware/gpio.h>
+#include "hardware/adc.h"
+#include "hardware/uart.h"
+
 
 #define UART_ID uart0
 #define BAUD_RATE 9600
