@@ -97,7 +97,7 @@ int main() {
         // printf("value : %d | voltage : %.3f | expected_voltage : %.3f \n", value, voltage, expected_voltage);
         printf("%d,%.3f,%.3f\n", value, voltage, expected_voltage);
         uint8_t voltage_value = (voltage / 1.6f) * 255;
-        // io_exp_write(0x09, voltage_value);
+        io_exp_write(0x09, voltage_value);
 
         value++;
         
