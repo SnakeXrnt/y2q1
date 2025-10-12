@@ -1,15 +1,54 @@
 #include <iostream>
-#include "utils.h"   // for reading vectors
+#include <vector>
+#include <unordered_map>
+#include <queue>
+#include <string>
+#include "utils.h"
 
 int main() {
-    /* TODO:
-        Write a program that reads a list of edges representing an *undirected* graph
-        from its standard input (given as a comma-separated list between square
-        brackets, e.g. `[(A, B),(B, C),(C, D)]`), followed by two characters representing
-        the start and end nodes.
+    // Process many cases until EOF
+    while (true) {
+        std::vector<std::pair<char,char>> edges;
+        char s, t;
 
-        The program must then find the path with the fewest edges between the start and
-        end nodes, and print the number of edges of that path, or `-1` if no such path exists.
-    */
+        // Try to read one case: [edges] s t
+        if (!(std::cin >> edges)) break;      // no more input
+        if (!(std::cin >> s >> t)) break;
+
+        // Discard anything else on the line, e.g. "===> 4"
+        std::string junk;
+        std::getline(std::cin, junk);
+
+        // Build undirected adjacency list
+        std::unordered_map<char, std::vector<char>> adj;
+        for (auto [u, v] : edges) {
+            adj[u].push_back(v);
+            adj[v].push_back(u);
+        }
+
+        // Trivial cases
+        if (s == t) { std::cout << 0 << "\n"; continue; }
+        if (!adj.count(s) || !adj.count(t)) { std::cout << -1 << "\n"; continue; }
+
+        // BFS
+        std::unordered_map<char,int> dist;
+        std::queue<char> q;
+        dist[s] = 0; q.push(s);
+
+        int answer = -1;
+        while (!q.empty()) {
+            char u = q.front(); q.pop();
+            for (char v : adj[u]) {
+                if (!dist.count(v)) {
+                    dist[v] = dist[u] + 1;
+                    if (v == t) { answer = dist[v]; goto done; }
+                    q.push(v);
+                }
+            }
+        }
+    done:
+        std::cout << answer << "\n";
+    }
+
     return 0;
 }

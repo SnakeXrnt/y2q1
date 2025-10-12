@@ -5,3 +5,5 @@ compile_commands.json
 **/.venv/
 **/pyenv/
 project/tradingbot/pyenv/
+.env
+
