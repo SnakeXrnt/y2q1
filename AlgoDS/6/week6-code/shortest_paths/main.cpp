@@ -1,54 +1,59 @@
 #include <iostream>
-#include <vector>
-#include <unordered_map>
 #include <queue>
-#include <string>
-#include "utils.h"
+#include <unordered_map>
+#include <unordered_set>
+#include <utility>
+#include <vector>
+#include "utils.h"   // for reading vectors
 
 int main() {
-    // Process many cases until EOF
-    while (true) {
-        std::vector<std::pair<char,char>> edges;
-        char s, t;
+    /* TODO:
+        Write a program that reads a list of edges representing an *undirected* graph
+        from its standard input (given as a comma-separated list between square
+        brackets, e.g. `[(A, B),(B, C),(C, D)]`), followed by two characters representing
+        the start and end nodes.
 
-        // Try to read one case: [edges] s t
-        if (!(std::cin >> edges)) break;      // no more input
-        if (!(std::cin >> s >> t)) break;
+        The program must then find the path with the fewest edges between the start and
+        end nodes, and print the number of edges of that path, or `-1` if no such path exists.
+    */
 
-        // Discard anything else on the line, e.g. "===> 4"
-        std::string junk;
-        std::getline(std::cin, junk);
+    std::vector<std::pair<char, char>> edges;
+    char start;
+    char end;
 
-        // Build undirected adjacency list
-        std::unordered_map<char, std::vector<char>> adj;
-        for (auto [u, v] : edges) {
-            adj[u].push_back(v);
-            adj[v].push_back(u);
+    std::cin >> edges >> start >> end;
+
+    std::unordered_map<char, std::vector<char>> graph;
+
+    for (auto& e: edges) {
+        graph[e.first].push_back(e.second);
+        graph[e.second].push_back(e.first);
+    }
+
+    std::queue<std::pair<char, int>> q;
+    std::unordered_set<char> visited;
+
+    q.push({start, 0});
+    visited.insert(start);
+
+    while (!q.empty()) {
+        auto [node, dist] = q.front();
+        q.pop();
+        if (node == end) {
+            std::cout << dist << std::endl;
+            return 0;
         }
 
-        // Trivial cases
-        if (s == t) { std::cout << 0 << "\n"; continue; }
-        if (!adj.count(s) || !adj.count(t)) { std::cout << -1 << "\n"; continue; }
-
-        // BFS
-        std::unordered_map<char,int> dist;
-        std::queue<char> q;
-        dist[s] = 0; q.push(s);
-
-        int answer = -1;
-        while (!q.empty()) {
-            char u = q.front(); q.pop();
-            for (char v : adj[u]) {
-                if (!dist.count(v)) {
-                    dist[v] = dist[u] + 1;
-                    if (v == t) { answer = dist[v]; goto done; }
-                    q.push(v);
-                }
+        for (auto& neighbor : graph[node]) {
+            if (visited.find(neighbor) == visited.end()) {
+                visited.insert(neighbor);
+                q.push({neighbor, dist + 1});
             }
         }
-    done:
-        std::cout << answer << "\n";
     }
+    std::cout << -1 << std::endl;
+
 
     return 0;
 }
+
