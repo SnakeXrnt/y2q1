@@ -37,7 +37,7 @@ add_compile_options(-Wall -Wno-format -Wno-unused-function -Wno-maybe-uninitiali
 file(GLOB SOURCES "*.h" "*.c")
 add_executable(${PROJECT} ${SOURCES})
 
-target_link_libraries(${PROJECT} pico_stdlib hardware_i2c )
+target_link_libraries(${PROJECT} pico_stdlib hardware_i2c hardware_spi)
 
 pico_add_extra_outputs(${PROJECT})
 
