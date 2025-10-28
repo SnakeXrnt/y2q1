@@ -15,7 +15,6 @@
 #define PIN_SCK 18 
 #define PIN_SYNC 20
 
-// volatile flags used by main and ISR
 static volatile uint8_t mode_light = 1;      // 1 = show light, 0 = show temperature
 static volatile bool mode_changed = false;
 
@@ -43,9 +42,6 @@ void io_exp_write(uint8_t reg, uint8_t data) {
     sleep_ms(10);
 }
 
-
-
-// simple debounce in ISR
 void gpio_callback(uint gpio, uint32_t events) {
     static uint64_t last_us = 0;
     uint64_t now = time_us_64();
@@ -58,7 +54,7 @@ void gpio_callback(uint gpio, uint32_t events) {
     }
 }
 
-// -------- Temperature --------
+
 float read_temperature(void)
 {
     uint8_t reg = 0x00;
@@ -74,7 +70,7 @@ float read_temperature(void)
     return raw * 0.125f;
 }
 
-// -------- Light (raw 20-bit) --------
+
 uint32_t read_light_raw(void)
 {
     uint8_t reg = 0x0D;
@@ -83,9 +79,7 @@ uint32_t read_light_raw(void)
     i2c_write_blocking(i2c_default, LIGHT_ADDR, &reg, 1, true);
     i2c_read_blocking(i2c_default, LIGHT_ADDR, data, 3, false);
 
-    uint32_t value = ((uint32_t)(data[2] & 0x0F) << 16) |
-                     ((uint32_t)data[1] << 8) |
-                     (uint32_t)data[0];
+    uint32_t value = ((uint32_t)(data[2] & 0x0F) << 16) | ((uint32_t)data[1] << 8) | (uint32_t)data[0];
     return value;
 }
 
