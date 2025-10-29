@@ -35,6 +35,7 @@
 // LM75B registers 
 #define REG_TOS 0x03 // upper treshold 
 #define REG_THYST 0x02 // lower treshold
+#define REG_TEMP 0X00
 
 // temperature sensor writer 
 
@@ -114,7 +115,7 @@ static inline void cs_deselect() {
 }
 void io_exp_write(uint8_t reg, uint8_t data) {
     uint8_t buf[3];
-    buf[0] = 0b01000110; // your device's control/address byte
+    buf[0] = 0b01000110; // your device's control/ad dress byte
     buf[1] = reg;
     buf[2] = data;
     cs_select();
@@ -149,6 +150,25 @@ void gpio_callback_amb(uint gpio, uint32_t events) {
             flash_request = true;
             last_us = now;
         }
+    }
+}
+
+// callback temperature 
+
+
+static inline void lm75b_clear_os(void) {
+    uint8_t reg = REG_TEMP;
+    uint8_t buf[2];
+    i2c_write_blocking(i2c_default, TEMP_ADDR, &reg, 1, true);
+    i2c_read_blocking(i2c_default, TEMP_ADDR, buf, 2, false);
+}
+
+void gpio_callback_temp(uint gpio, uint32_t events) {
+    if (gpio == OS_PIN && (events & GPIO_IRQ_EDGE_FALL)) {
+        printf("temperature interupted\n");
+        lm75b_clear_os();
+        flash_request = true;
+        printf("cleared os \n");
     }
 }
 
@@ -248,6 +268,12 @@ int main(void) {
     gpio_set_dir(INT_PIN, GPIO_IN);
     gpio_pull_up(INT_PIN);
     gpio_set_irq_enabled_with_callback(INT_PIN, GPIO_IRQ_EDGE_FALL, true, &gpio_callback_amb);
+
+
+    gpio_init(OS_PIN);
+    gpio_set_dir(OS_PIN, GPIO_IN);
+    gpio_pull_up(OS_PIN);  // OS is open-drain
+    gpio_set_irq_enabled_with_callback(OS_PIN, GPIO_IRQ_EDGE_FALL, true, &gpio_callback_temp);
 
     temp_treshold_up(0x3C);
     temp_treshold_down(0x32);
