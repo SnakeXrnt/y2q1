@@ -49,75 +49,94 @@ void gpio_callback(uint gpio, uint32_t events) {
 
 static void gpio_all_irq(uint gpio, uint32_t events) {
     if (gpio == BUTTON_PIN && (events & GPIO_IRQ_EDGE_RISE)) {
-        gpio_callback(gpio, events);                // your toggle/debounce
+        gpio_callback(gpio, events);
     } else if (gpio == INT_PIN && (events & GPIO_IRQ_EDGE_FALL)) {
-        // just set a flag; do work in main loop
         flash_request = true;
     } else if (gpio == OS_PIN && (events & GPIO_IRQ_EDGE_FALL)) {
         flash_request = true;
     }
 }
 
-
 int main(void) {
     stdio_init_all();
 
-    // I2C, SPI init, sensors, thresholds...
     initialize_i2c();
     initialize_spi();
-    io_exp_write(0x00, 0);     // whatever your IO expander needs
-    amb_setup_thresholds(100, 160000, 4); // make sure this enables INT in the sensor!
-    temp_treshold_up(0x3C);
-    temp_treshold_down(0x32);
-
-    // --- GPIO directions & pulls ---
+    io_exp_write(0x00, 0);
+    amb_setup_thresholds(100, 160000, 4);
+    
+    // *** KEY CHANGE: Initialize interrupt mode and set thresholds ***
+    temp_init_interrupt_mode();  // Enable interrupt mode
+    temp_set_thresholds(26, 26); // Both thresholds at 26°C for immediate re-trigger
+    
+    // GPIO setup...
     gpio_init(BUTTON_PIN);
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
-    gpio_pull_down(BUTTON_PIN);                 // button active-high
+    gpio_pull_down(BUTTON_PIN);
 
     gpio_init(INT_PIN);
     gpio_set_dir(INT_PIN, GPIO_IN);
-    gpio_pull_up(INT_PIN);                      // ambient INT is open-drain, active-LOW
+    gpio_pull_up(INT_PIN);
 
     gpio_init(OS_PIN);
     gpio_set_dir(OS_PIN, GPIO_IN);
-    gpio_pull_up(OS_PIN);                       // assuming active-LOW; flip if not
+    gpio_pull_up(OS_PIN);
 
-    // --- register ONE global callback once ---
-    gpio_set_irq_enabled_with_callback(/*any pin*/ BUTTON_PIN, 0, true, &gpio_all_irq);
-
-    // --- now enable the specific edges per pin ---
+    gpio_set_irq_enabled_with_callback(BUTTON_PIN, 0, true, &gpio_all_irq);
     gpio_set_irq_enabled(BUTTON_PIN, GPIO_IRQ_EDGE_RISE, true);
-    gpio_set_irq_enabled(INT_PIN,   GPIO_IRQ_EDGE_FALL, true);
-    gpio_set_irq_enabled(OS_PIN,    GPIO_IRQ_EDGE_FALL, true);
+    gpio_set_irq_enabled(INT_PIN, GPIO_IRQ_EDGE_FALL, true);
+    gpio_set_irq_enabled(OS_PIN, GPIO_IRQ_EDGE_FALL, true);
 
     while (true) {
         if (mode_changed) {
             mode_changed = false;
+
             if (mode_light) {
-                gpio_set_irq_enabled(INT_PIN,   GPIO_IRQ_EDGE_FALL, true);
-                gpio_set_irq_enabled(OS_PIN,    GPIO_IRQ_EDGE_FALL, false);
+                gpio_set_irq_enabled(OS_PIN, GPIO_IRQ_EDGE_FALL, false);
+                uint8_t st = amb_read_reg(REG_MAIN_STATUS);
+                if (gpio_get(INT_PIN) == 0) {
+                    flash_request = true;
+                }
+                gpio_set_irq_enabled(INT_PIN, GPIO_IRQ_EDGE_FALL, true);
             } else {
-                gpio_set_irq_enabled(INT_PIN,   GPIO_IRQ_EDGE_FALL, false);
-                gpio_set_irq_enabled(OS_PIN,    GPIO_IRQ_EDGE_FALL, true);
+                gpio_set_irq_enabled(INT_PIN, GPIO_IRQ_EDGE_FALL, false);
+                clear_os();
+                if (gpio_get(OS_PIN) == 0) {
+                    flash_request = true;
+                }
+                gpio_set_irq_enabled(OS_PIN, GPIO_IRQ_EDGE_FALL, true);
             }
             printf("Mode: %s\n", mode_light ? "LIGHT" : "TEMPERATURE");
         }
 
-        if (flash_request) {                // do the flashing OUTSIDE the ISR
+        // *** KEY CHANGE: Handle interrupt and re-arm ***
+        if (flash_request) {
             flash_request = false;
             flash_leds_3x();
-            clear_interupt();
+            clear_interupt();  // For ambient sensor
+            
+            // For temperature sensor in interrupt mode:
+            if (!mode_light) {
+                clear_os();  // Clear the interrupt
+                
+                // Check if temp is still above threshold
+                float temp = read_temperature();
+                if (temp > 26.0f) {
+                    flash_request = true;
+                    // Temperature still high - manu ally retrigger
+                    // The sensor will generate a new falling edge because
+                    // we cleared it while temp is still > Tos
+                    sleep_us(100);  // Small delay to ensure edge detection
+                }
+            }
         }
 
         if (mode_light) {
-
-            uint32_t light = read_ambeient();   // also: use 0x29 (7-bit) in that driver
+            uint32_t light = read_ambeient();
             printf("Light raw: %lu\n", (unsigned long)light);
             last_led_byte = (uint8_t)light;
             io_exp_write(0x09, last_led_byte);
         } else {
-
             float temp = read_temperature();
             printf("Temperature: %.3f C\n", temp);
             last_led_byte = (uint8_t)temp;

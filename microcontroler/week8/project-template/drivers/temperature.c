@@ -17,26 +17,44 @@
 #define REG_THYST 0x02 // lower treshold
 #define REG_TEMP 0X00
 
-static void temp_register_write(uint8_t reg, uint8_t msb, uint8_t lsb) {
-    uint8_t buffer[3] = {reg, msb, lsb};
+// In your temperature.c driver:
+
+void temp_init_interrupt_mode(void) {
+    // Configuration register: 0x02 = interrupt mode (bit 1 = 1)
+    uint8_t config_data[2] = {0x01, 0x02};  // Reg pointer 0x01, config byte 0x02
+    i2c_write_blocking(i2c_default, TEMP_ADDR, config_data, 2, false);
+}
+
+void temp_set_thresholds(int temp_low, int temp_high) {
+    // Convert to LM75B format: 0.5°C per LSB, left-shifted 7 bits
+    uint16_t low_raw = (uint16_t)(temp_low * 2) << 7;
+    uint16_t high_raw = (uint16_t)(temp_high * 2) << 7;
+    
+    uint8_t thyst[2] = {(low_raw >> 8) & 0xFF, low_raw & 0xFF};
+    uint8_t tos[2] = {(high_raw >> 8) & 0xFF, high_raw & 0xFF};
+    
+    uint8_t buffer[3];
+    
+    // Write Thyst
+    buffer[0] = REG_THYST;
+    buffer[1] = thyst[0];
+    buffer[2] = thyst[1];
+    i2c_write_blocking(i2c_default, TEMP_ADDR, buffer, 3, false);
+    
+    // Write Tos
+    buffer[0] = REG_TOS;
+    buffer[1] = tos[0];
+    buffer[2] = tos[1];
     i2c_write_blocking(i2c_default, TEMP_ADDR, buffer, 3, false);
 }
 
-static void temp_treshold_up(uint32_t value9bit) {
-    uint8_t msb = (uint8_t)(value9bit & 0xFF);
-    uint8_t lsb = 0x00;
-    temp_register_write(REG_TOS, msb, lsb);
-
+void clear_os(void) {
+    // Reading ANY register clears the OS interrupt
+    uint8_t reg = 0x01;  // Config register
+    uint8_t buf;
+    i2c_write_blocking(i2c_default, TEMP_ADDR, &reg, 1, true);
+    i2c_read_blocking(i2c_default, TEMP_ADDR, &buf, 1, false);
 }
-
-
-static void temp_treshold_down(uint32_t value9bit) {
-    uint8_t msb = (uint8_t)(value9bit & 0xFF);
-    uint8_t lsb = 0x00;
-    temp_register_write(REG_THYST, msb, lsb);
-}
-
-
 float read_temperature(void)
 {
     uint8_t reg = 0x00;
@@ -51,12 +69,3 @@ float read_temperature(void)
 
     return raw * 0.125f;
 }
-
-static inline void clear_os(void) {
-    uint8_t reg = REG_TEMP;
-    uint8_t buf[2];
-    i2c_write_blocking(i2c_default, TEMP_ADDR, &reg, 1, true);
-    i2c_read_blocking(i2c_default, TEMP_ADDR, buf, 2, false);
-}
-
-
