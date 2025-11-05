@@ -1,5 +1,15 @@
+#include <deque>
 #include <iostream>
+#include <ostream>
+#include <unordered_map>
+#include <utility>
+#include <variant>
+#include <vector>
 #include "utils.h"
+
+bool cycle_patrol(char& start, std::vector<std::pair<char, char>> &edges) {
+
+}
 
 int main() {
     // NOTE: See testing.md for instructions on how to test your solution
@@ -13,7 +23,14 @@ int main() {
         return 1;
     }
 
+    std::unordered_map()
+
+
+
+    
     // TODO: Find cycle in the directed graph represented by edges
+    
+    
 
     return 0;
 }

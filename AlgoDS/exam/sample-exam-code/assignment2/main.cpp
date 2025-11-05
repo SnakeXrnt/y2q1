@@ -44,42 +44,36 @@ node* split_even(node*& head) {
 
 
 node * split_even2(node* head) {
-    node * previous_temp = nullptr;
-    node * next_temp = nullptr;
     node * temp = head;
+    node * previous_temp = nullptr;
     node * even = nullptr;
-    node * temp_even = nullptr;
+    node * even_temp = nullptr;
 
     while (temp != nullptr) {
-        next_temp = temp->next;
+        node* next_temp = temp->next;
         if (temp->data % 2 == 0) {
-            // disconnecting
             if (previous_temp != nullptr) {
                 previous_temp->next = next_temp;
             } else {
                 head = next_temp;
             }
-            
-            // preping
+
             temp->next = nullptr;
 
-            // inserting to even
             if (even != nullptr) {
-                temp_even->next = temp;
+                even_temp->next = temp;
             } else {
                 even = temp;
             }
 
-            temp_even = temp;
-        } else {
-            // move to the next tone
-            previous_temp = temp;
-        }
-            
-        temp = next_temp;
-        
+            even_temp = temp;
 
+        } else { 
+            previous_temp = temp; 
+        }
+        temp = next_temp;
     }
+
     return even;
 }
 
@@ -98,7 +92,7 @@ int main() {
     }
 
     // TODO: Split the list into odd and even_temp
-    node* even = split_even(head);
+    node* even = split_even2(head);
 
     std::cout << "even: " << even << std::endl;
     std::cout << "odd : " << head << std::endl;

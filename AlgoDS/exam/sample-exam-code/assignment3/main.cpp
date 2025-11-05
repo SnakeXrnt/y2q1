@@ -1,9 +1,23 @@
 #include <iostream>
+#include <ostream>
 #include "bintree.h"    // for binary_tree_node
 #include "utils.h"      // for reading vectors
 
 /// Type alias for a binary tree node containing integers
 using node = sax::binary_tree_node<int>;
+
+bool are_identical(node* bst1, node* bst2) {
+    
+    if (bst1 == nullptr && bst2 == nullptr) {
+        return true;
+    } 
+
+    if (bst1 == nullptr || bst2 == nullptr) {
+        return false;
+    }
+
+    return (bst1->data == bst2->data && are_identical(bst1->left, bst2->left) && are_identical(bst1->right, bst2->right));
+}
 
 int main() {
     // NOTE: See testing.md for instructions on how to test your solution
@@ -21,6 +35,14 @@ int main() {
     }
 
     // TODO: check if the two BSTs are identical
+
+    bool answer = are_identical(bst1, bst2);
+
+    if (answer) {
+        std::cout << "identical" << std::endl;
+    } else {
+        std::cout << "not identical" << std::endl;
+    }
 
     // Clean up memory
     sax::binary_tree_node<int>::cleanup(bst1);
