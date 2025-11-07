@@ -43,20 +43,21 @@ node* split_even(node*& head) {
 }
 
 
-node * split_even2(node* head) {
+node * split_even2(node*& head) {
     node * temp = head;
     node * previous_temp = nullptr;
-    node * even = nullptr;
+    
+    node * even= nullptr;
     node * even_temp = nullptr;
 
-    while (temp != nullptr) {
+    while(temp != nullptr) {
         node* next_temp = temp->next;
         if (temp->data % 2 == 0) {
             if (previous_temp != nullptr) {
                 previous_temp->next = next_temp;
             } else {
                 head = next_temp;
-            }
+            } 
 
             temp->next = nullptr;
 
@@ -67,13 +68,11 @@ node * split_even2(node* head) {
             }
 
             even_temp = temp;
-
-        } else { 
-            previous_temp = temp; 
+        } else {
+            previous_temp = temp;
         }
         temp = next_temp;
     }
-
     return even;
 }
 

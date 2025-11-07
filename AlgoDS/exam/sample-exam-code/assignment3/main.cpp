@@ -7,10 +7,10 @@
 using node = sax::binary_tree_node<int>;
 
 bool are_identical(node* bst1, node* bst2) {
-    
+
     if (bst1 == nullptr && bst2 == nullptr) {
         return true;
-    } 
+    }
 
     if (bst1 == nullptr || bst2 == nullptr) {
         return false;
